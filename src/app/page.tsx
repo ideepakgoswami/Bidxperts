@@ -19,30 +19,22 @@ export default function Home() {
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="top-bar">
-        <div className="container top-bar-container">
-          <div className="top-bar-item"><i className="ph-fill ph-map-pin"></i> 123 Digital Way, Tech Hub, HYD - 500081</div>
-          <div className="top-bar-contact">
-            <a href="tel:+919030312910" className="top-bar-item"><i className="ph-fill ph-phone"></i> +91 9030312910</a>
-            <a href="mailto:bidxperts@gmail.com" className="top-bar-item"><i className="ph-fill ph-envelope"></i> bidxperts@gmail.com</a>
-          </div>
-        </div>
-      </div>
-
       {/* Navigation */}
       <header className="navbar">
         <div className="container nav-container">
-          <a href="#" className="logo">Bid<span className="text-primary">xperts</span> <span className="dot"></span></a>
+          <a href="#" className="logo">
+            <img src="/logo.png" alt="Bidxperts Logo" className="logo-img" />
+          </a>
           <nav className="nav-links">
             <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#platform">Case Studies</a>
+            <a href="#services">Services <i className="ph-bold ph-caret-down"></i></a>
+            <a href="#cases">Case Studies</a>
+            <a href="#about">About Us</a>
             <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
           </nav>
           <div className="nav-actions">
-            <a href="#quote" className="btn btn-dark">Free Consultation</a>
+            <a href="#quote" className="btn btn-primary">Book Strategy Call <i className="ph-bold ph-arrow-right"></i></a>
           </div>
           <button className="mobile-menu-btn">
             <i className="ph ph-list"></i>
@@ -52,90 +44,131 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section id="home" className="hero-split">
-          <div className="container hero-split-container">
+        <section id="home" className="hero-section">
+          <div className="container hero-container">
             
             {/* Left Content */}
-            <div className="hero-split-text">
+            <div className="hero-content">
               <div className="hero-tagline">
-                <span className="line"></span> TOP-RATED DIGITAL MARKETING PARTNER
+                <span className="line"></span> PERFORMANCE MARKETING AGENCY
               </div>
               <h1 className="hero-title">
-                Accelerate Your <span className="text-primary">Business Growth</span> With Data-Driven Marketing
+                We Grow Businesses With Marketing That <span className="text-primary">Drives Real Results</span>
               </h1>
               <p className="hero-description">
-                Bidxperts specializes in crafting tailored, high-performance campaigns across SEO, PPC, and Social Media. We empower your brand to reach the right audience and achieve measurable, scalable success.
+                We help brands generate high-quality leads, increase ROAS, and scale profitably through Google Ads, Meta Ads, SEO, and conversion-focused strategies.
               </p>
+              
               <div className="hero-buttons">
-                <a href="#audit" className="btn btn-primary btn-lg">Book Free Consultation <i className="ph ph-arrow-right"></i></a>
-                <a href="#services" className="btn btn-outline btn-lg">View Case Studies</a>
+                <a href="#audit" className="btn btn-primary btn-lg">Get Free Growth Audit <i className="ph-bold ph-arrow-right"></i></a>
+                <a href="#cases" className="btn-link">View Case Studies <i className="ph-bold ph-arrow-right"></i></a>
               </div>
-              <div className="hero-stats">
-                <div className="stat">
-                  <h3 className="text-primary">150+</h3>
-                  <p>Successful Projects</p>
+              
+              <div className="trust-badges">
+                <div className="trust-badge">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Ads_logo.svg/512px-Google_Ads_logo.svg.png" alt="Google Ads" className="badge-icon-img" />
+                  <span>Google Ads<br/>Certified</span>
                 </div>
-                <div className="stat">
-                  <h3 className="text-primary">250%</h3>
-                  <p>Average Growth</p>
+                <div className="trust-badge">
+                  <i className="ph-fill ph-meta-logo text-blue-600"></i>
+                  <span>Meta Business<br/>Partner</span>
                 </div>
+                <div className="trust-badge">
+                  <i className="ph-fill ph-seal-check text-primary"></i>
+                  <span>7+ Years<br/>Experience</span>
+                </div>
+                <div className="trust-badge">
+                  <i className="ph-fill ph-target text-primary"></i>
+                  <span>ROI-Focused<br/>Strategies</span>
+                </div>
+              </div>
+              
+              <div className="hero-stats-card">
                 <div className="stat">
-                  <h3 className="text-primary">7+</h3>
-                  <p>Years of Expertise</p>
+                  <div className="stat-icon"><i className="ph-fill ph-users"></i></div>
+                  <div>
+                    <h3>300+</h3>
+                    <p>Happy Clients</p>
+                  </div>
+                </div>
+                <div className="divider"></div>
+                <div className="stat">
+                  <div className="stat-icon"><i className="ph-bold ph-trend-up"></i></div>
+                  <div>
+                    <h3>300%+</h3>
+                    <p>Average ROAS</p>
+                  </div>
+                </div>
+                <div className="divider"></div>
+                <div className="stat">
+                  <div className="stat-icon"><i className="ph-fill ph-wallet"></i></div>
+                  <div>
+                    <h3>₹10Cr+</h3>
+                    <p>Ad Spend Managed</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Right Form */}
-            <div className="hero-split-visual">
+            <div className="hero-form-wrapper">
               <div className="hero-form-card">
-                <div className="form-badge-wrapper">
-                  <div className="form-badge-pill"><i className="ph-fill ph-rocket-launch"></i> DISCOVER YOUR POTENTIAL</div>
+                <div className="form-badge-pill">
+                  <i className="ph-fill ph-phone-call"></i> FREE STRATEGY CALL
                 </div>
-                <h3 className="form-title">Request a Custom Audit</h3>
-                <p className="form-subtitle">Share your details below, and our growth specialists will connect with you shortly.</p>
+                <h3 className="form-title">Let&apos;s Discuss Your Growth Goals</h3>
+                <p className="form-subtitle">Fill out the form and our team will get back to you within 2 hours.</p>
+                
                 <form className="hero-form">
-                  <div className="form-group">
-                    <label>Full Name *</label>
-                    <input type="text" placeholder="e.g. Rahul Sharma" required />
+                  <div className="form-row">
+                    <div className="form-group with-icon">
+                      <i className="ph ph-user"></i>
+                      <input type="text" placeholder="Full Name" required />
+                    </div>
+                    <div className="form-group with-icon">
+                      <i className="ph ph-envelope-simple"></i>
+                      <input type="email" placeholder="Email Address" required />
+                    </div>
                   </div>
-                  <div className="form-group">
-                    <label>Phone Number *</label>
-                    <input type="tel" placeholder="e.g. +91 98765 43210" required />
+                  
+                  <div className="form-group with-icon">
+                    <i className="ph ph-phone"></i>
+                    <input type="tel" placeholder="Phone Number" required />
                   </div>
-                  <div className="form-group">
-                    <label>Email Address *</label>
-                    <input type="email" placeholder="e.g. rahul@company.com" required />
-                  </div>
-                  <div className="form-group">
-                    <label>Company / Website</label>
-                    <input type="url" placeholder="e.g. www.yourwebsite.com" />
-                  </div>
+                  
                   <div className="form-row">
                     <div className="form-group">
                       <label>Service Needed</label>
                       <select>
                         <option>Select Service</option>
+                        <option>Google Ads</option>
+                        <option>Meta Ads</option>
                         <option>SEO</option>
-                        <option>PPC</option>
-                        <option>Social Media</option>
                       </select>
                     </div>
                     <div className="form-group">
                       <label>Monthly Budget</label>
                       <select>
                         <option>Select Budget</option>
-                        <option>Below $1000</option>
-                        <option>$1000 - $5000</option>
-                        <option>Above $5000</option>
+                        <option>Below ₹50,000</option>
+                        <option>₹50,000 - ₹2,00,000</option>
+                        <option>Above ₹2,00,000</option>
                       </select>
                     </div>
                   </div>
+                  
                   <div className="form-group">
                     <label>Tell Us About Your Goals</label>
-                    <textarea placeholder="Goals..." rows={2}></textarea>
+                    <textarea placeholder="Write your goals here..." rows={3}></textarea>
                   </div>
-                  <button type="submit" className="btn btn-primary btn-block btn-lg">Get Your Custom Strategy <i className="ph ph-arrow-right"></i></button>
+                  
+                  <button type="submit" className="btn btn-primary btn-block btn-lg">
+                    Get Free Consultation <i className="ph-bold ph-arrow-right"></i>
+                  </button>
+                  
+                  <p className="secure-text">
+                    <i className="ph-fill ph-lock-key"></i> Your information is 100% secure and confidential.
+                  </p>
                 </form>
               </div>
             </div>
@@ -143,7 +176,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Showcase (Alternating Layout) */}
+        {/* Services Showcase */}
         <section id="services" className="services-showcase">
           <div className="container">
             
@@ -151,7 +184,7 @@ export default function Home() {
             <div className="service-row">
               <div className="service-text">
                 <div className="service-badge">Search Engine Optimization</div>
-                <h2>Climb to the Top.<br/>Unlock <span className="text-highlight">Organic Potential</span></h2>
+                <h2>Climb to the Top.<br/>Unlock <span className="text-primary">Organic Potential</span></h2>
                 <p>Increase your visibility and attract high-intent visitors without paying for clicks.</p>
                 <ul className="service-benefits">
                   <li><i className="ph ph-check"></i> Higher Rankings</li>
@@ -161,7 +194,7 @@ export default function Home() {
                   <li><i className="ph ph-check"></i> Targeted Traffic</li>
                   <li><i className="ph ph-check"></i> Analytics Reporting</li>
                 </ul>
-                <a href="#" className="btn btn-dark btn-lg">Get started now</a>
+                <a href="#" className="btn btn-primary btn-lg">Get started now</a>
               </div>
               <div className="service-visual mockup-container">
                 <div className="dashboard-mockup">
@@ -169,35 +202,18 @@ export default function Home() {
                     <div className="mockup-search"><i className="ph ph-magnifying-glass"></i></div>
                   </div>
                   <div className="mockup-body">
-                    <h4>Performance on Search results</h4>
                     <div className="mockup-tags">
                       <span className="mockup-tag">Search type: Web <i className="ph ph-pencil-simple"></i></span>
-                      <span className="mockup-tag">Date: 17 Jun 2023 - 10 May 2... <i className="ph ph-pencil-simple"></i></span>
-                      <span className="mockup-tag-new"><i className="ph ph-plus"></i> New</span>
                     </div>
                     <div className="mockup-stats">
-                      <div className="m-stat stat-blue">
-                        <span className="m-label"><i className="ph-fill ph-check-square"></i> Total clicks</span>
+                      <div className="m-stat">
+                        <span className="m-label">Total clicks</span>
                         <span className="m-value">149K</span>
                       </div>
-                      <div className="m-stat stat-purple">
-                        <span className="m-label"><i className="ph-fill ph-check-square"></i> Total impressions</span>
+                      <div className="m-stat">
+                        <span className="m-label">Total impressions</span>
                         <span className="m-value">7.23M</span>
                       </div>
-                      <div className="m-stat stat-white">
-                        <span className="m-label"><i className="ph ph-square"></i> Average CTR</span>
-                        <span className="m-value">2.1%</span>
-                      </div>
-                      <div className="m-stat stat-white">
-                        <span className="m-label"><i className="ph ph-square"></i> Average position</span>
-                        <span className="m-value">9</span>
-                      </div>
-                    </div>
-                    <div className="mockup-chart">
-                       <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="chart-line">
-                          <path d="M0,28 L10,28 L20,27 L30,28 L40,26 L50,25 L60,24 L70,20 L80,18 L85,5 L88,15 L92,8 L95,12 L100,5" fill="none" stroke="#3b82f6" strokeWidth="0.5" />
-                          <path d="M0,29 L10,29 L20,29 L30,29 L40,28 L50,27 L60,26 L70,25 L80,22 L85,10 L88,20 L92,12 L95,18 L100,10" fill="none" stroke="#8b5cf6" strokeWidth="0.5" />
-                       </svg>
                     </div>
                   </div>
                 </div>
@@ -208,7 +224,7 @@ export default function Home() {
             <div className="service-row reverse">
               <div className="service-text">
                 <div className="service-badge">Pay-Per-Click Advertising</div>
-                <h2>Instantly Connect with <span className="text-highlight">Ready Buyers</span></h2>
+                <h2>Instantly Connect with <span className="text-primary">Ready Buyers</span></h2>
                 <p>Deploy precision-targeted ad campaigns designed to minimize wasted spend and maximize your return on investment.</p>
                 <ul className="service-benefits">
                   <li><i className="ph ph-check"></i> Targeted Ads</li>
@@ -218,7 +234,7 @@ export default function Home() {
                   <li><i className="ph ph-check"></i> Budget Control</li>
                   <li><i className="ph ph-check"></i> Conversion Focused</li>
                 </ul>
-                <a href="#" className="btn btn-dark btn-lg">Get started now</a>
+                <a href="#" className="btn btn-primary btn-lg">Get started now</a>
               </div>
               <div className="service-visual mockup-container">
                 <div className="dashboard-mockup">
@@ -226,71 +242,18 @@ export default function Home() {
                     <div className="mockup-search"><i className="ph ph-magnifying-glass"></i></div>
                   </div>
                   <div className="mockup-body">
-                    <h4>Campaign Overview</h4>
                     <div className="mockup-tags">
                       <span className="mockup-tag">Platform: Google Ads <i className="ph ph-pencil-simple"></i></span>
-                      <span className="mockup-tag-new"><i className="ph ph-plus"></i> New</span>
                     </div>
                     <div className="mockup-stats">
-                      <div className="m-stat stat-blue">
-                        <span className="m-label"><i className="ph-fill ph-check-square"></i> Conversions</span>
+                      <div className="m-stat">
+                        <span className="m-label">Conversions</span>
                         <span className="m-value">2,450</span>
                       </div>
-                      <div className="m-stat stat-purple">
-                        <span className="m-label"><i className="ph-fill ph-check-square"></i> Cost / Conv</span>
+                      <div className="m-stat">
+                        <span className="m-label">Cost / Conv</span>
                         <span className="m-value">$12.40</span>
                       </div>
-                    </div>
-                    <div className="mockup-chart">
-                       <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="chart-line">
-                          <path d="M0,25 L20,20 L40,15 L60,20 L80,10 L100,5" fill="none" stroke="#3b82f6" strokeWidth="0.5" />
-                       </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* SMM Service */}
-            <div className="service-row">
-              <div className="service-text">
-                <div className="service-badge">Social Media Marketing</div>
-                <h2>Build a Loyal <span className="text-highlight">Brand Community</span></h2>
-                <p>Transform followers into loyal brand advocates through compelling content and strategic community management.</p>
-                <ul className="service-benefits">
-                  <li><i className="ph ph-check"></i> Audience Targeting</li>
-                  <li><i className="ph ph-check"></i> Platform Strategy</li>
-                  <li><i className="ph ph-check"></i> Brand Building</li>
-                  <li><i className="ph ph-check"></i> Content Creation</li>
-                  <li><i className="ph ph-check"></i> Engagement Growth</li>
-                  <li><i className="ph ph-check"></i> Analytics Tracking</li>
-                </ul>
-                <a href="#" className="btn btn-dark btn-lg">Get started now</a>
-              </div>
-              <div className="service-visual mockup-container">
-                <div className="dashboard-mockup">
-                  <div className="mockup-header">
-                    <div className="mockup-search"><i className="ph ph-magnifying-glass"></i></div>
-                  </div>
-                  <div className="mockup-body">
-                    <h4>Audience Engagement</h4>
-                    <div className="mockup-tags">
-                      <span className="mockup-tag">Network: Instagram <i className="ph ph-pencil-simple"></i></span>
-                    </div>
-                    <div className="mockup-stats">
-                      <div className="m-stat stat-blue">
-                        <span className="m-label"><i className="ph-fill ph-check-square"></i> Followers</span>
-                        <span className="m-value">84.2K</span>
-                      </div>
-                      <div className="m-stat stat-purple">
-                        <span className="m-label"><i className="ph-fill ph-check-square"></i> Engagement</span>
-                        <span className="m-value">6.8%</span>
-                      </div>
-                    </div>
-                    <div className="mockup-chart">
-                       <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="chart-line">
-                          <path d="M0,28 L20,25 L40,18 L60,15 L80,8 L100,5" fill="none" stroke="#8b5cf6" strokeWidth="0.5" />
-                       </svg>
                     </div>
                   </div>
                 </div>
@@ -306,7 +269,9 @@ export default function Home() {
       <footer>
         <div className="container footer-container">
           <div className="footer-brand">
-            <a href="#" className="logo">Bid<span className="text-primary">xperts</span> <span className="dot"></span></a>
+            <a href="#" className="logo">
+              <img src="/logo.png" alt="Bidxperts Logo" className="logo-img" />
+            </a>
             <p>A digital Marketing agency executing end-to-end solutions with data-driven tactics that boost your brand&apos;s impact.</p>
             <div className="social-links">
               <a href="#"><i className="ph-fill ph-facebook-logo"></i></a>
@@ -334,17 +299,6 @@ export default function Home() {
               <li><a href="#">Press</a></li>
               <li><a href="#">Partners</a></li>
             </ul>
-          </div>
-          
-          <div className="footer-contact">
-            <h4>Address</h4>
-            <div className="contact-item">
-              <span>Bidxperts Solutions. All Rights Reserved.</span>
-            </div>
-            <div className="footer-mini-links">
-              <a href="#">Terms & Conditions</a>
-              <a href="#">Privacy Policy</a>
-            </div>
           </div>
         </div>
       </footer>
