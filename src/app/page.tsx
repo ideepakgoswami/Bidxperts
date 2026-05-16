@@ -1,8 +1,6 @@
 "use client";
-
 import { useEffect } from "react";
 import Link from "next/link";
-
 export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
@@ -13,11 +11,9 @@ export default function Home() {
         navbar?.classList.remove("scrolled");
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <>
       {/* Navigation */}
@@ -28,7 +24,7 @@ export default function Home() {
           </Link>
           <nav className="nav-links">
             <Link href="/" className="active">Home</Link>
-            <Link href="/#about">About Us</Link>
+            <Link href="/about">About Us</Link>
             <div className="nav-dropdown">
               <Link href="#">Services <i className="ph-bold ph-caret-down"></i></Link>
               <div className="dropdown-content">
@@ -39,21 +35,18 @@ export default function Home() {
               </div>
             </div>
             <Link href="/case-studies">Case Studies</Link>
-            <Link href="/#testimonials">Testimonials</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/#contact">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </nav>
           <div className="nav-actions">
             <a href="#audit" className="btn btn-primary">Get Free Audit <i className="ph-bold ph-arrow-right"></i></a>
           </div>
         </div>
       </header>
-
       <main>
         {/* Hero Section */}
         <section id="home" className="hero-section">
           <div className="container hero-grid">
-            
             {/* Left Content */}
             <div className="hero-content">
               <div className="hero-tagline">RESULTS-FOCUSED DIGITAL MARKETING</div>
@@ -64,12 +57,10 @@ export default function Home() {
                 We help businesses attract the right audience, generate quality leads,
                 and maximize ROI with performance-driven marketing strategies.
               </p>
-              
               <div className="hero-actions">
                 <a href="#audit" className="btn btn-white btn-lg">Get Your Free Audit <i className="ph-bold ph-arrow-right"></i></a>
                 <a href="#process" className="btn btn-outline-transparent btn-lg"><i className="ph-fill ph-play-circle text-white" style={{fontSize: "1.2rem"}}></i> See How We Do It</a>
               </div>
-              
               <div className="hero-stats">
                 <div className="stat-item">
                   <div className="stat-icon"><i className="ph-fill ph-users-three"></i></div>
@@ -96,13 +87,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             {/* Right Form */}
             <div className="hero-form-wrapper" id="audit">
               <div className="hero-form-card">
                 <h2>Get Your <span className="text-primary">FREE</span> Marketing Audit</h2>
                 <p>Fill out the form and our experts will get back to you within 24 hours.</p>
-                
                 <form className="hero-form">
                   <div className="form-group with-icon">
                     <i className="ph ph-user"></i>
@@ -120,7 +109,6 @@ export default function Home() {
                     <i className="ph ph-globe"></i>
                     <input type="url" placeholder="Website (if any)" />
                   </div>
-                  
                   <div className="form-group">
                     <select required>
                       <option value="" disabled selected>What are you looking for?</option>
@@ -137,25 +125,20 @@ export default function Home() {
                       <option value=">1L">Above ₹1,00,000</option>
                     </select>
                   </div>
-                  
                   <div className="form-group">
                     <textarea placeholder="Tell us about your business" rows={2} required></textarea>
                   </div>
-                  
                   <button type="submit" className="btn btn-primary btn-block btn-lg">
                     Get Free Audit <i className="ph-bold ph-arrow-right"></i>
                   </button>
-                  
                   <div className="privacy-guarantee">
                     <i className="ph-fill ph-lock-key"></i> 100% Privacy Guaranteed
                   </div>
                 </form>
               </div>
             </div>
-
           </div>
         </section>
-
         {/* Why Businesses Choose Us */}
         <section id="about" className="why-choose-us">
           <div className="container grid-2">
@@ -211,7 +194,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Our Services */}
         <section id="services" className="services-section">
           <div className="container">
@@ -247,7 +229,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Our Process */}
         <section id="process" className="process-section">
           <div className="container">
@@ -289,16 +270,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Testimonials */}
         <section id="testimonials" className="testimonials-section">
           <div className="container">
             <div className="section-tag">WHAT OUR CLIENTS SAY</div>
             <h2>Loved by Businesses, Proven by Results</h2>
-            
             <div className="testimonials-slider">
               <button className="slider-arrow"><i className="ph-bold ph-caret-left"></i></button>
-              
               <div className="testimonial-card">
                 <div className="stars">
                   <i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i>
@@ -313,7 +291,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
               <div className="testimonial-card">
                 <div className="stars">
                   <i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i>
@@ -328,7 +305,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               <div className="testimonial-card">
                 <div className="stars">
                   <i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i>
@@ -343,10 +319,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               <button className="slider-arrow"><i className="ph-bold ph-caret-right"></i></button>
             </div>
-            
             <div className="slider-dots">
               <div className="slider-dot active"></div>
               <div className="slider-dot"></div>
@@ -354,7 +328,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* FAQs */}
         <section id="faq" className="faq-section">
           <div className="container faq-grid">
@@ -391,7 +364,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* CTA Banner */}
         <div className="cta-banner-wrapper">
           <div className="container">
@@ -407,9 +379,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
       </main>
-
       {/* Footer */}
       <footer>
         <div className="container footer-grid">
@@ -423,7 +393,6 @@ export default function Home() {
               <a href="#"><i className="ph-fill ph-youtube-logo"></i></a>
             </div>
           </div>
-          
           <div className="footer-col">
             <h4>Quick Links</h4>
             <ul>
@@ -435,7 +404,6 @@ export default function Home() {
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
@@ -447,7 +415,6 @@ export default function Home() {
               <li><a href="#">Landing Pages</a></li>
             </ul>
           </div>
-          
           <div className="footer-col">
             <h4>Company</h4>
             <ul>
@@ -457,7 +424,6 @@ export default function Home() {
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Contact Us</h4>
             <div className="contact-item">
@@ -473,10 +439,7 @@ export default function Home() {
               <span>123, Business Street,<br/>Gurugram, Haryana - 122001</span>
             </div>
           </div>
-          
         </div>
-
-
         <div className="footer-bottom">
           <p>© 2024 Bidxperts. All Rights Reserved.</p>
         </div>
@@ -484,4 +447,3 @@ export default function Home() {
     </>
   );
 }
-

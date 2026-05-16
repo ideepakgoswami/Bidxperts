@@ -1,8 +1,6 @@
 "use client";
-
 import { useEffect } from "react";
 import Link from "next/link";
-
 export default function CaseStudiesPage() {
   useEffect(() => {
     const handleScroll = () => {
@@ -13,11 +11,9 @@ export default function CaseStudiesPage() {
         navbar?.classList.remove("scrolled");
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   const cases = [
     {
       id: 1,
@@ -76,7 +72,6 @@ export default function CaseStudiesPage() {
       ]
     }
   ];
-
   return (
     <>
       {/* Navigation */}
@@ -87,7 +82,7 @@ export default function CaseStudiesPage() {
           </Link>
           <nav className="nav-links">
             <Link href="/">Home</Link>
-            <Link href="/#about">About Us</Link>
+            <Link href="/about">About Us</Link>
             <div className="nav-dropdown">
               <Link href="#">Services <i className="ph-bold ph-caret-down"></i></Link>
               <div className="dropdown-content">
@@ -98,16 +93,14 @@ export default function CaseStudiesPage() {
               </div>
             </div>
             <Link href="/case-studies" className="active">Case Studies</Link>
-            <Link href="/#testimonials">Testimonials</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/#contact">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </nav>
           <div className="nav-actions">
             <a href="/#audit" className="btn btn-primary">Get Free Audit <i className="ph-bold ph-arrow-right"></i></a>
           </div>
         </div>
       </header>
-
       <main className="cs-page-bg">
         {/* Hero Section */}
         <section className="cs-hero">
@@ -121,7 +114,6 @@ export default function CaseStudiesPage() {
             <div className="cs-hero-graphic"></div>
           </div>
         </section>
-
         {/* Case Studies List */}
         <section className="cs-list-section">
           <div className="container">
@@ -155,7 +147,6 @@ export default function CaseStudiesPage() {
              </div>
           </div>
         </section>
-
         {/* CTA Banner */}
         <div className="cta-banner-wrapper">
           <div className="container">
@@ -171,9 +162,7 @@ export default function CaseStudiesPage() {
             </div>
           </div>
         </div>
-
       </main>
-
       {/* Footer */}
       <footer>
         <div className="container footer-grid">
@@ -187,20 +176,18 @@ export default function CaseStudiesPage() {
               <a href="#"><i className="ph-fill ph-youtube-logo"></i></a>
             </div>
           </div>
-          
           <div className="footer-col">
             <h4>Quick Links</h4>
             <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/#about">About Us</Link></li>
+              <li><Link href="/about">About Us</Link></li>
               <li><Link href="/services/google-ads">Services</Link></li>
               <li><Link href="/case-studies" style={{color: 'var(--primary)'}}>Case Studies</Link></li>
-              <li><Link href="/#testimonials">Testimonials</Link></li>
+              <li></li>
               <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/#contact">Contact Us</Link></li>
+              <li><Link href="/contact">Contact Us</Link></li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
@@ -212,7 +199,6 @@ export default function CaseStudiesPage() {
               <li><a href="#">Landing Pages</a></li>
             </ul>
           </div>
-          
           <div className="footer-col">
             <h4>Company</h4>
             <ul>
@@ -222,7 +208,6 @@ export default function CaseStudiesPage() {
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Contact Us</h4>
             <div className="contact-item">
@@ -238,10 +223,7 @@ export default function CaseStudiesPage() {
               <span>123, Business Street,<br/>Gurugram, Haryana - 122001</span>
             </div>
           </div>
-          
         </div>
-
-
         <div className="footer-bottom">
           <p>© 2024 Bidxperts. All Rights Reserved.</p>
         </div>

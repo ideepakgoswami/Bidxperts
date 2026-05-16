@@ -1,8 +1,6 @@
 "use client";
-
 import { useEffect } from "react";
 import Link from "next/link";
-
 export default function BlogPage() {
   useEffect(() => {
     const handleScroll = () => {
@@ -13,11 +11,9 @@ export default function BlogPage() {
         navbar?.classList.remove("scrolled");
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   const blogPosts = [
     {
       id: 1,
@@ -110,7 +106,6 @@ export default function BlogPage() {
       comments: "No Comments Yet"
     }
   ];
-
   return (
     <>
       <header className="navbar">
@@ -120,7 +115,7 @@ export default function BlogPage() {
           </Link>
           <nav className="nav-links">
             <Link href="/">Home</Link>
-            <Link href="/#about">About Us</Link>
+            <Link href="/about">About Us</Link>
             <div className="nav-dropdown">
               <Link href="#">Services <i className="ph-bold ph-caret-down"></i></Link>
               <div className="dropdown-content">
@@ -131,16 +126,14 @@ export default function BlogPage() {
               </div>
             </div>
             <Link href="/case-studies">Case Studies</Link>
-            <Link href="/#testimonials">Testimonials</Link>
             <Link href="/blog" className="active">Blog</Link>
-            <Link href="/#contact">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </nav>
           <div className="nav-actions">
             <a href="/#audit" className="btn btn-primary">Get Free Audit <i className="ph-bold ph-arrow-right"></i></a>
           </div>
         </div>
       </header>
-
       <main className="blog-page-bg">
         <section className="blog-header">
           <div className="container">
@@ -148,7 +141,6 @@ export default function BlogPage() {
             <p>Stay updated with the latest digital marketing trends, strategies, <br/>and insights to grow your business.</p>
           </div>
         </section>
-
         <section className="blog-list-section">
           <div className="container">
             <div className="blog-grid">
@@ -167,7 +159,6 @@ export default function BlogPage() {
                 </div>
               ))}
             </div>
-            
             <div className="pagination">
               <a href="#" className="page-link active">1</a>
               <a href="#" className="page-link">2</a>
@@ -179,7 +170,6 @@ export default function BlogPage() {
           </div>
         </section>
       </main>
-
       {/* Footer */}
       <footer>
         <div className="container footer-grid">
@@ -193,19 +183,17 @@ export default function BlogPage() {
               <a href="#"><i className="ph-fill ph-youtube-logo"></i></a>
             </div>
           </div>
-          
           <div className="footer-col">
             <h4>Quick Links</h4>
             <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/#about">About Us</Link></li>
+              <li><Link href="/about">About Us</Link></li>
               <li><Link href="/#services">Services</Link></li>
               <li><Link href="/#cases">Case Studies</Link></li>
               <li><Link href="/blog" style={{color: 'var(--primary)'}}>Blog</Link></li>
-              <li><Link href="/#contact">Contact Us</Link></li>
+              <li><Link href="/contact">Contact Us</Link></li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
@@ -217,7 +205,6 @@ export default function BlogPage() {
               <li><a href="#">Landing Pages</a></li>
             </ul>
           </div>
-          
           <div className="footer-col">
             <h4>Company</h4>
             <ul>
@@ -227,7 +214,6 @@ export default function BlogPage() {
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Contact Us</h4>
             <div className="contact-item">
@@ -243,10 +229,7 @@ export default function BlogPage() {
               <span>123, Business Street,<br/>Gurugram, Haryana - 122001</span>
             </div>
           </div>
-          
         </div>
-
-
         <div className="footer-bottom">
           <p>© 2024 Bidxperts. All Rights Reserved.</p>
         </div>

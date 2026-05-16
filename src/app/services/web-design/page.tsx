@@ -1,8 +1,6 @@
 "use client";
-
 import { useEffect } from "react";
 import Link from "next/link";
-
 export default function WebDesignService() {
   useEffect(() => {
     const handleScroll = () => {
@@ -13,11 +11,9 @@ export default function WebDesignService() {
         navbar?.classList.remove("scrolled");
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <>
       {/* Navigation */}
@@ -28,7 +24,7 @@ export default function WebDesignService() {
           </Link>
           <nav className="nav-links">
             <Link href="/">Home</Link>
-            <Link href="/#about">About Us</Link>
+            <Link href="/about">About Us</Link>
             <div className="nav-dropdown">
               <Link href="#" className="active">Services <i className="ph-bold ph-caret-down"></i></Link>
               <div className="dropdown-content">
@@ -39,16 +35,14 @@ export default function WebDesignService() {
               </div>
             </div>
             <Link href="/case-studies">Case Studies</Link>
-            <Link href="/#testimonials">Testimonials</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/#contact">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </nav>
           <div className="nav-actions">
             <a href="/#audit" className="btn btn-primary">Get Free Audit <i className="ph-bold ph-arrow-right"></i></a>
           </div>
         </div>
       </header>
-
       <main>
         {/* Service Hero */}
         <section className="service-hero">
@@ -77,7 +71,6 @@ export default function WebDesignService() {
             </div>
           </div>
         </section>
-
         {/* Lead Gen Section */}
         <section id="audit" className="lead-gen-section">
           <div className="container grid-2">
@@ -95,7 +88,6 @@ export default function WebDesignService() {
               <div className="hero-form-card">
                 <h2>Get a <span className="text-primary">FREE</span> Design Consultation</h2>
                 <p>Fill out the form and our design team will reach out to discuss your project.</p>
-                
                 <form className="hero-form">
                   <div className="form-group with-icon">
                     <i className="ph ph-user"></i>
@@ -113,7 +105,6 @@ export default function WebDesignService() {
                     <i className="ph ph-globe"></i>
                     <input type="url" placeholder="Current Website (if any)" />
                   </div>
-                  
                   <div className="form-group">
                     <select required>
                       <option value="web" selected>Web Design</option>
@@ -121,15 +112,12 @@ export default function WebDesignService() {
                       <option value="ads">Paid Ads</option>
                     </select>
                   </div>
-                  
                   <div className="form-group">
                     <textarea placeholder="Tell us about your dream website" rows={2} required></textarea>
                   </div>
-                  
                   <button type="submit" className="btn btn-primary btn-block btn-lg">
                     Request Consultation <i className="ph-bold ph-arrow-right"></i>
                   </button>
-                  
                   <div className="privacy-guarantee">
                     <i className="ph-fill ph-lock-key"></i> 100% Privacy Guaranteed
                   </div>
@@ -138,7 +126,6 @@ export default function WebDesignService() {
             </div>
           </div>
         </section>
-
         {/* Dark Services Grid */}
         <section className="dark-services-section">
           <div className="container grid-2">
@@ -169,7 +156,6 @@ export default function WebDesignService() {
             </div>
           </div>
         </section>
-
         {/* Industries */}
         <section className="industries-section">
            <div className="container text-center">
@@ -204,7 +190,6 @@ export default function WebDesignService() {
              <a href="#" className="btn btn-dark" style={{ marginTop: '3rem' }}>See Portfolio <i className="ph-bold ph-arrow-right"></i></a>
            </div>
         </section>
-
         {/* How We Work Vertical */}
         <section className="how-we-work-section">
           <div className="container grid-2 align-start">
@@ -247,7 +232,6 @@ export default function WebDesignService() {
              </div>
           </div>
         </section>
-
         {/* Case Studies / Results */}
         <section className="results-section">
            <div className="container">
@@ -298,7 +282,6 @@ export default function WebDesignService() {
               </div>
            </div>
         </section>
-
         {/* FAQs */}
         <section id="faq" className="faq-section" style={{ background: '#f8fafc' }}>
           <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
@@ -323,7 +306,6 @@ export default function WebDesignService() {
             </div>
           </div>
         </section>
-
         {/* Let's Connect */}
         <section className="cta-banner-wrapper" style={{ padding: 0 }}>
           <div className="cta-banner" style={{ borderRadius: 0, padding: '4rem 2rem' }}>
@@ -336,9 +318,7 @@ export default function WebDesignService() {
             </div>
           </div>
         </section>
-
       </main>
-
       {/* Footer */}
       <footer>
         <div className="container footer-grid">
@@ -352,19 +332,17 @@ export default function WebDesignService() {
               <a href="#"><i className="ph-fill ph-youtube-logo"></i></a>
             </div>
           </div>
-          
           <div className="footer-col">
             <h4>Quick Links</h4>
             <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/#about">About Us</Link></li>
+              <li><Link href="/about">About Us</Link></li>
               <li><Link href="/services/google-ads">Services</Link></li>
               <li><Link href="/case-studies">Case Studies</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/#contact">Contact Us</Link></li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
@@ -376,17 +354,15 @@ export default function WebDesignService() {
               <li><a href="#">Landing Pages</a></li>
             </ul>
           </div>
-          
           <div className="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><Link href="/#about">About Us</Link></li>
+              <li><Link href="/about">About Us</Link></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Contact Us</h4>
             <div className="contact-item">
@@ -403,7 +379,6 @@ export default function WebDesignService() {
             </div>
           </div>
         </div>
-
         <div className="footer-bottom">
           <p>© 2024 Bidxperts. All Rights Reserved.</p>
         </div>
