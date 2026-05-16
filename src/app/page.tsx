@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -22,20 +23,20 @@ export default function Home() {
       {/* Navigation */}
       <header className="navbar">
         <div className="container nav-container">
-          <a href="#" className="logo">
+          <Link href="/" className="logo">
             <img src="/logo.png" alt="Bidxperts Logo" className="logo-img" />
-          </a>
+          </Link>
           <nav className="nav-links">
-            <a href="#home" className="active">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#services">Services <i className="ph-bold ph-caret-down"></i></a>
-            <a href="#cases">Case Studies</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact Us</a>
+            <Link href="/" className="active">Home</Link>
+            <Link href="/#about">About Us</Link>
+            <Link href="/services/google-ads">Services <i className="ph-bold ph-caret-down"></i></Link>
+            <Link href="/case-studies">Case Studies</Link>
+            <Link href="/#testimonials">Testimonials</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/#contact">Contact Us</Link>
           </nav>
           <div className="nav-actions">
-            <a href="#audit" className="btn btn-white">Get Free Audit <i className="ph-bold ph-arrow-right"></i></a>
+            <a href="#audit" className="btn btn-primary">Get Free Audit <i className="ph-bold ph-arrow-right"></i></a>
           </div>
         </div>
       </header>
