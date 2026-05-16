@@ -88,7 +88,15 @@ export default function CaseStudiesPage() {
           <nav className="nav-links">
             <Link href="/">Home</Link>
             <Link href="/#about">About Us</Link>
-            <Link href="/services/google-ads">Services <i className="ph-bold ph-caret-down"></i></Link>
+            <div className="nav-dropdown">
+              <Link href="#">Services <i className="ph-bold ph-caret-down"></i></Link>
+              <div className="dropdown-content">
+                <Link href="/services/google-ads">Google Ads</Link>
+                <Link href="/services/seo">SEO Services</Link>
+                <Link href="/services/meta-ads">Meta Ads</Link>
+                <Link href="/services/web-design">Web Design</Link>
+              </div>
+            </div>
             <Link href="/case-studies" className="active">Case Studies</Link>
             <Link href="/#testimonials">Testimonials</Link>
             <Link href="/blog">Blog</Link>
@@ -111,21 +119,6 @@ export default function CaseStudiesPage() {
             </div>
             {/* The chart graphic is handled via a background image or abstract CSS in the right side */}
             <div className="cs-hero-graphic"></div>
-          </div>
-        </section>
-
-        {/* Filter Bar */}
-        <section className="cs-filter-section">
-          <div className="container">
-            <div className="cs-filter-bar">
-               <button className="cs-filter-btn active">All Case Studies</button>
-               <button className="cs-filter-btn"><i className="ph-bold ph-magnifying-glass"></i> SEO</button>
-               <button className="cs-filter-btn"><i className="ph-bold ph-google-logo"></i> Google Ads</button>
-               <button className="cs-filter-btn"><i className="ph-bold ph-facebook-logo"></i> Meta Ads</button>
-               <button className="cs-filter-btn"><i className="ph-bold ph-users"></i> Lead Generation</button>
-               <button className="cs-filter-btn"><i className="ph-bold ph-shopping-cart"></i> Ecommerce</button>
-               <button className="cs-filter-btn"><i className="ph-bold ph-desktop"></i> Website Design</button>
-            </div>
           </div>
         </section>
 
@@ -163,48 +156,21 @@ export default function CaseStudiesPage() {
           </div>
         </section>
 
-        {/* CTA Section inside the page container */}
-        <section className="cs-cta-section">
-           <div className="container">
-              <div className="cs-cta-card">
-                 <div className="cs-cta-left">
-                    <div className="section-tag" style={{color: 'var(--primary)', backgroundColor: 'transparent', padding: 0, marginBottom: '1rem'}}>LET&apos;S GROW TOGETHER</div>
-                    <h2>Ready to Get Similar Results for Your Business?</h2>
-                    <p>Get a free audit and roadmap tailored to your business goals. Let&apos;s unlock your growth potential.</p>
-                    <div className="cs-cta-actions">
-                       <a href="/#audit" className="btn btn-primary btn-lg">Get Free Audit <i className="ph-bold ph-arrow-right"></i></a>
-                       <div className="cs-cta-reviews">
-                          <div className="avatars">
-                             <img src="https://i.pravatar.cc/100?img=1" alt="User" />
-                             <img src="https://i.pravatar.cc/100?img=2" alt="User" />
-                             <img src="https://i.pravatar.cc/100?img=3" alt="User" />
-                          </div>
-                          <div className="review-text">
-                             <div className="stars" style={{gap: '2px'}}><i className="ph-fill ph-star text-primary"></i><i className="ph-fill ph-star text-primary"></i><i className="ph-fill ph-star text-primary"></i><i className="ph-fill ph-star text-primary"></i><i className="ph-fill ph-star text-primary"></i></div>
-                             <p>4.9/5 from 120+ reviews</p>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div className="cs-cta-right">
-                    <h3>Get Your Free Audit</h3>
-                    <form className="cs-cta-form">
-                       <div className="form-row">
-                          <input type="text" placeholder="Your Name" required />
-                          <input type="tel" placeholder="Your Phone Number" required />
-                       </div>
-                       <input type="email" placeholder="Your Email" required />
-                       <input type="url" placeholder="Website URL (Optional)" />
-                       <button type="submit" className="btn btn-primary btn-block btn-lg" style={{marginTop: '0.5rem'}}>Get Free Audit <i className="ph-bold ph-arrow-right"></i></button>
-                       <div className="cs-cta-guarantees">
-                          <span><i className="ph-bold ph-check-circle"></i> No Obligation</span>
-                          <span><i className="ph-bold ph-check-circle"></i> 100% Confidential</span>
-                       </div>
-                    </form>
-                 </div>
+        {/* CTA Banner */}
+        <div className="cta-banner-wrapper">
+          <div className="container">
+            <div className="cta-banner">
+              <div className="cta-banner-left">
+                <div className="cta-icon"><i className="ph-fill ph-rocket-launch"></i></div>
+                <div>
+                  <h2>Ready to Get Similar Results?</h2>
+                  <p>Book a free strategy session and let&apos;s discuss how we can grow your business.</p>
+                </div>
               </div>
-           </div>
-        </section>
+              <a href="/#audit" className="btn btn-white btn-lg" style={{color: "var(--text-main)", whiteSpace: "nowrap"}}>Book Free Consultation <i className="ph-bold ph-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
 
       </main>
 
@@ -238,10 +204,10 @@ export default function CaseStudiesPage() {
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
-              <li><a href="#">SEO Services</a></li>
-              <li><a href="#">Website Design</a></li>
-              <li><a href="#">Google Ads</a></li>
-              <li><a href="#">Meta Ads</a></li>
+              <li><Link href="/services/seo">SEO Services</Link></li>
+              <li><Link href="/services/web-design">Website Design</Link></li>
+              <li><Link href="/services/google-ads">Google Ads</Link></li>
+              <li><Link href="/services/meta-ads">Meta Ads</Link></li>
               <li><a href="#">Content Marketing</a></li>
               <li><a href="#">Landing Pages</a></li>
             </ul>
@@ -274,20 +240,7 @@ export default function CaseStudiesPage() {
           </div>
           
         </div>
-        <div className="container">
-          <div className="footer-col" style={{borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "2rem", display: "flex", justifyContent: "space-between", alignItems: "center"}}>
-            <div className="newsletter" style={{display: "flex", alignItems: "center", gap: "2rem", width: "100%"}}>
-               <div>
-                  <h4 style={{marginBottom: "0.5rem"}}>Newsletter</h4>
-                  <p style={{marginBottom: 0}}>Subscribe to get the latest tips, insights & updates.</p>
-               </div>
-               <form className="newsletter-form" style={{maxWidth: "400px", flexGrow: 1}}>
-                 <input type="email" placeholder="Enter your email" required />
-                 <button type="submit"><i className="ph-bold ph-paper-plane-right"></i></button>
-               </form>
-            </div>
-          </div>
-        </div>
+
 
         <div className="footer-bottom">
           <p>© 2024 Bidxperts. All Rights Reserved.</p>

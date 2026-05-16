@@ -29,7 +29,15 @@ export default function Home() {
           <nav className="nav-links">
             <Link href="/" className="active">Home</Link>
             <Link href="/#about">About Us</Link>
-            <Link href="/services/google-ads">Services <i className="ph-bold ph-caret-down"></i></Link>
+            <div className="nav-dropdown">
+              <Link href="#">Services <i className="ph-bold ph-caret-down"></i></Link>
+              <div className="dropdown-content">
+                <Link href="/services/google-ads">Google Ads</Link>
+                <Link href="/services/seo">SEO Services</Link>
+                <Link href="/services/meta-ads">Meta Ads</Link>
+                <Link href="/services/web-design">Web Design</Link>
+              </div>
+            </div>
             <Link href="/case-studies">Case Studies</Link>
             <Link href="/#testimonials">Testimonials</Link>
             <Link href="/blog">Blog</Link>
@@ -431,10 +439,10 @@ export default function Home() {
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
-              <li><a href="#">SEO Services</a></li>
-              <li><a href="#">Website Design</a></li>
-              <li><a href="#">Google Ads</a></li>
-              <li><a href="#">Meta Ads</a></li>
+              <li><Link href="/services/seo">SEO Services</Link></li>
+              <li><Link href="/services/web-design">Website Design</Link></li>
+              <li><Link href="/services/google-ads">Google Ads</Link></li>
+              <li><Link href="/services/meta-ads">Meta Ads</Link></li>
               <li><a href="#">Content Marketing</a></li>
               <li><a href="#">Landing Pages</a></li>
             </ul>
@@ -467,20 +475,7 @@ export default function Home() {
           </div>
           
         </div>
-        <div className="container">
-          <div className="footer-col" style={{borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "2rem", display: "flex", justifyContent: "space-between", alignItems: "center"}}>
-            <div className="newsletter" style={{display: "flex", alignItems: "center", gap: "2rem", width: "100%"}}>
-               <div>
-                  <h4 style={{marginBottom: "0.5rem"}}>Newsletter</h4>
-                  <p style={{marginBottom: 0}}>Subscribe to get the latest tips, insights & updates.</p>
-               </div>
-               <form className="newsletter-form" style={{maxWidth: "400px", flexGrow: 1}}>
-                 <input type="email" placeholder="Enter your email" required />
-                 <button type="submit"><i className="ph-bold ph-paper-plane-right"></i></button>
-               </form>
-            </div>
-          </div>
-        </div>
+
 
         <div className="footer-bottom">
           <p>© 2024 Bidxperts. All Rights Reserved.</p>

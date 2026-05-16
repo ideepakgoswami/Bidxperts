@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 
-export default function GoogleAdsService() {
+export default function SEOService() {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
@@ -55,15 +55,15 @@ export default function GoogleAdsService() {
           <div className="container service-hero-grid">
             <div className="service-hero-content">
               <div className="breadcrumb">
-                <Link href="/">Home</Link> <i className="ph-bold ph-caret-right"></i> <Link href="/#services">Services</Link> <i className="ph-bold ph-caret-right"></i> <span>Google Ads</span>
+                <Link href="/">Home</Link> <i className="ph-bold ph-caret-right"></i> <Link href="/#services">Services</Link> <i className="ph-bold ph-caret-right"></i> <span>SEO</span>
               </div>
-              <h1>Google Ads Built for Service Based Businesses</h1>
-              <p>We build data-driven Google Ads campaigns that generate high-quality leads, lower your cost-per-acquisition, and maximize your return on ad spend.</p>
+              <h1>SEO Built for Long-Term Growth</h1>
+              <p>We help you dominate search results, drive organic traffic, and build authority in your industry with proven, data-driven SEO strategies.</p>
               <div className="hero-actions" style={{ marginBottom: 0, marginTop: '2rem' }}>
                 <a href="#audit" className="btn btn-white btn-lg">Get Free Audit <i className="ph-bold ph-arrow-right"></i></a>
               </div>
               <div className="service-hero-badges" style={{ display: 'flex', gap: '1.5rem', marginTop: '3rem' }}>
-                 <div className="badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Ads_logo.svg/512px-Google_Ads_logo.svg.png" alt="Google Partner" style={{height: 24, filter: 'brightness(0) invert(1)'}} /></div>
+                 <div className="badge"><i className="ph-fill ph-google-logo" style={{fontSize: '1.5rem'}}></i> <span style={{marginLeft: '0.5rem'}}>SEO Certified</span></div>
                  <div className="badge"><i className="ph-fill ph-star text-primary"></i> <span style={{color: '#fff', fontSize: '0.9rem', fontWeight: 600, marginLeft: '0.5rem'}}>4.9/5 Rating</span></div>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function GoogleAdsService() {
                <div className="video-thumbnail-card">
                  <div className="thumbnail-content">
                    <div className="play-btn"><i className="ph-fill ph-play"></i></div>
-                   <p>Learn how we generate ROI</p>
+                   <p>Learn our SEO strategy</p>
                  </div>
                </div>
             </div>
@@ -82,19 +82,19 @@ export default function GoogleAdsService() {
         <section id="audit" className="lead-gen-section">
           <div className="container grid-2">
             <div className="lead-left">
-              <h2>Ready to Get More Leads From Google Ads in Perth Metro?</h2>
-              <p>Stop wasting money on clicks that don&apos;t convert. We build high-performance campaigns designed specifically for service-based businesses to dominate their local market.</p>
+              <h2>Ready to Dominate Search Results?</h2>
+              <p>Stop disappearing in search. We build organic growth strategies designed specifically for service-based businesses to rank higher and stay there.</p>
               <ul className="service-benefits" style={{ gridTemplateColumns: '1fr', margin: '2rem 0' }}>
-                  <li><i className="ph-fill ph-check-circle"></i> Generate exclusive, high-intent leads</li>
-                  <li><i className="ph-fill ph-check-circle"></i> Transparent reporting with no hidden fees</li>
-                  <li><i className="ph-fill ph-check-circle"></i> Proven strategies tailored to your industry</li>
+                  <li><i className="ph-fill ph-check-circle"></i> Sustainable, long-term organic traffic</li>
+                  <li><i className="ph-fill ph-check-circle"></i> High-intent keyword targeting</li>
+                  <li><i className="ph-fill ph-check-circle"></i> Technical SEO and content optimization</li>
               </ul>
-              <button className="btn btn-dark btn-lg">Start Growing with Bidxperts <i className="ph-bold ph-arrow-right"></i></button>
+              <button className="btn btn-dark btn-lg">Start Ranking with Bidxperts <i className="ph-bold ph-arrow-right"></i></button>
             </div>
             <div className="lead-right">
               <div className="hero-form-card">
-                <h2>Get Your <span className="text-primary">FREE</span> Marketing Audit</h2>
-                <p>Fill out the form and our experts will get back to you within 24 hours.</p>
+                <h2>Get Your <span className="text-primary">FREE</span> SEO Audit</h2>
+                <p>Fill out the form and our SEO experts will analyze your site within 24 hours.</p>
                 
                 <form className="hero-form">
                   <div className="form-group with-icon">
@@ -111,24 +111,23 @@ export default function GoogleAdsService() {
                   </div>
                   <div className="form-group with-icon">
                     <i className="ph ph-globe"></i>
-                    <input type="url" placeholder="Website (if any)" />
+                    <input type="url" placeholder="Website URL" required />
                   </div>
                   
                   <div className="form-group">
                     <select required>
-                      <option value="" disabled selected>What are you looking for?</option>
-                      <option value="seo">SEO</option>
+                      <option value="seo" selected>SEO Services</option>
                       <option value="ads">Paid Ads</option>
                       <option value="both">Both</option>
                     </select>
                   </div>
                   
                   <div className="form-group">
-                    <textarea placeholder="Tell us about your business" rows={2} required></textarea>
+                    <textarea placeholder="Tell us about your business goals" rows={2} required></textarea>
                   </div>
                   
                   <button type="submit" className="btn btn-primary btn-block btn-lg">
-                    Get Free Audit <i className="ph-bold ph-arrow-right"></i>
+                    Get Free SEO Audit <i className="ph-bold ph-arrow-right"></i>
                   </button>
                   
                   <div className="privacy-guarantee">
@@ -144,27 +143,27 @@ export default function GoogleAdsService() {
         <section className="dark-services-section">
           <div className="container grid-2">
             <div className="ds-left">
-              <h2>Digital Marketing Agency Services</h2>
-              <p>We provide a comprehensive suite of digital marketing services designed to work together to maximize your growth and ROI.</p>
+              <h2>Comprehensive SEO Solutions</h2>
+              <p>Our multi-layered approach to SEO ensures every aspect of your online presence is optimized for search engines and users alike.</p>
               <a href="/#services" className="btn btn-white" style={{ marginTop: '1.5rem', color: 'var(--dark-navy)' }}>See All Services</a>
             </div>
             <div className="ds-right">
               <div className="ds-grid">
                 <div className="ds-card">
-                  <h4>Google Ads</h4>
-                  <p>Capture high-intent search traffic and convert them into paying customers.</p>
+                  <h4>On-Page SEO</h4>
+                  <p>Content and HTML optimization to improve relevance and ranking.</p>
                 </div>
                 <div className="ds-card">
-                  <h4>Meta Ads</h4>
-                  <p>Reach your ideal audience on Facebook & Instagram to generate demand.</p>
+                  <h4>Off-Page SEO</h4>
+                  <p>Building authority through quality backlinks and digital PR.</p>
                 </div>
                 <div className="ds-card">
-                  <h4>SEO</h4>
-                  <p>Build long-term organic visibility and dominate search engine results.</p>
+                  <h4>Technical SEO</h4>
+                  <p>Ensuring your site is fast, crawlable, and secure for engines.</p>
                 </div>
                 <div className="ds-card">
-                  <h4>Web Design</h4>
-                  <p>High-converting landing pages and websites optimized for conversions.</p>
+                  <h4>Local SEO</h4>
+                  <p>Dominating local maps and search for area-based businesses.</p>
                 </div>
               </div>
             </div>
@@ -174,8 +173,8 @@ export default function GoogleAdsService() {
         {/* Industries */}
         <section className="industries-section">
            <div className="container text-center">
-             <h2>Perth Industries We Specialise In</h2>
-             <p className="subtitle">Proven strategies tailored to service-based businesses in the Perth metro.</p>
+             <h2>Industries We Scale with SEO</h2>
+             <p className="subtitle">Proven organic strategies tailored to competitive industries.</p>
              <div className="industries-grid">
                 <div className="industry-card">
                    <div className="ind-icon"><i className="ph-fill ph-house"></i></div>
@@ -202,7 +201,7 @@ export default function GoogleAdsService() {
                    <h4>Automotive</h4>
                 </div>
              </div>
-             <a href="#" className="btn btn-dark" style={{ marginTop: '3rem' }}>See All Industries We Help Grow <i className="ph-bold ph-arrow-right"></i></a>
+             <a href="#" className="btn btn-dark" style={{ marginTop: '3rem' }}>See All Industries <i className="ph-bold ph-arrow-right"></i></a>
            </div>
         </section>
 
@@ -210,38 +209,38 @@ export default function GoogleAdsService() {
         <section className="how-we-work-section">
           <div className="container grid-2 align-start">
              <div className="hww-left">
-                <h2>How We Work</h2>
+                <h2>Our SEO Process</h2>
                 <div className="stars"><i className="ph-fill ph-star text-primary"></i><i className="ph-fill ph-star text-primary"></i><i className="ph-fill ph-star text-primary"></i><i className="ph-fill ph-star text-primary"></i><i className="ph-fill ph-star text-primary"></i></div>
-                <p>A proven, systematic approach to scaling your business with Google Ads.</p>
+                <p>A transparent, results-driven SEO roadmap designed for long-term success.</p>
              </div>
              <div className="hww-right">
                 <div className="vertical-steps">
                   <div className="v-step">
                      <div className="v-step-num">1</div>
                      <div className="v-step-content">
-                        <h4>Discovery & Audit</h4>
-                        <p>We analyze your business, competitors, and current account performance.</p>
+                        <h4>Audit & Keywords</h4>
+                        <p>In-depth technical audit and high-value keyword research.</p>
                      </div>
                   </div>
                   <div className="v-step">
                      <div className="v-step-num">2</div>
                      <div className="v-step-content">
-                        <h4>Strategy Formulation</h4>
-                        <p>We build a customized, data-driven strategy tailored to your specific goals.</p>
+                        <h4>On-Site Strategy</h4>
+                        <p>Content optimization and technical fixes to boost rankings.</p>
                      </div>
                   </div>
                   <div className="v-step">
                      <div className="v-step-num">3</div>
                      <div className="v-step-content">
-                        <h4>Campaign Build & Launch</h4>
-                        <p>We create high-converting ad copy, landing pages, and launch your campaigns.</p>
+                        <h4>Authority Building</h4>
+                        <p>Link building and content marketing to improve domain authority.</p>
                      </div>
                   </div>
                   <div className="v-step">
                      <div className="v-step-num">4</div>
                      <div className="v-step-content">
-                        <h4>Ongoing Optimization</h4>
-                        <p>Continuous monitoring, testing, and refinement to maximize ROI.</p>
+                        <h4>Reporting & Growth</h4>
+                        <p>Transparent monthly reports and continuous strategy refinement.</p>
                      </div>
                   </div>
                 </div>
@@ -252,83 +251,73 @@ export default function GoogleAdsService() {
         {/* Case Studies / Results */}
         <section className="results-section">
            <div className="container">
-              <h3 className="section-title">Local lead generation for trades</h3>
+              <h3 className="section-title">SEO Success Stories</h3>
               <div className="results-grid">
                  <div className="result-card">
-                    <div className="tags"><span className="tag-seo">SEO</span><span className="tag-ads">Google Ads</span></div>
+                    <div className="tags"><span className="tag-seo">SEO</span></div>
                     <div className="result-icon text-primary"><i className="ph-bold ph-trend-up"></i></div>
-                    <h4>Plumbing Company</h4>
-                    <p>Increased local leads by 150% while reducing cost per acquisition by 30%.</p>
+                    <h4>Legal Firm</h4>
+                    <p>Ranked #1 for 50+ high-competition legal keywords in 6 months.</p>
                     <a href="#" className="read-more">Read Case Study <i className="ph-bold ph-arrow-right"></i></a>
                  </div>
                  <div className="result-card">
-                    <div className="tags"><span className="tag-ads">Google Ads</span></div>
+                    <div className="tags"><span className="tag-seo">SEO</span></div>
                     <div className="result-icon" style={{color: '#10b981'}}><i className="ph-bold ph-chart-bar"></i></div>
-                    <h4>Electrical Services</h4>
-                    <p>Achieved a 4x ROI within the first 3 months of campaign launch.</p>
+                    <h4>Dental Clinic</h4>
+                    <p>Increased organic patient inquiries by 200% with Local SEO.</p>
                     <a href="#" className="read-more">Read Case Study <i className="ph-bold ph-arrow-right"></i></a>
                  </div>
                  <div className="result-card">
                     <div className="tags"><span className="tag-seo">SEO</span></div>
                     <div className="result-icon" style={{color: '#f43f5e'}}><i className="ph-bold ph-target"></i></div>
-                    <h4>HVAC Contractor</h4>
-                    <p>Dominating local search results with 200+ organic leads per month.</p>
+                    <h4>Software Agency</h4>
+                    <p>Dominating niche B2B keywords with a 300% traffic increase.</p>
                     <a href="#" className="read-more">Read Case Study <i className="ph-bold ph-arrow-right"></i></a>
                  </div>
                  <div className="result-card">
-                    <div className="tags"><span className="tag-ads">Google Ads</span></div>
+                    <div className="tags"><span className="tag-seo">SEO</span></div>
                     <div className="result-icon" style={{color: '#8b5cf6'}}><i className="ph-bold ph-lightning"></i></div>
-                    <h4>Roofing Specialist</h4>
-                    <p>Increased appointment bookings by 180% with a localized keyword strategy.</p>
+                    <h4>Real Estate Group</h4>
+                    <p>Improved keyword rankings by 40 positions across all core listings.</p>
                     <a href="#" className="read-more">Read Case Study <i className="ph-bold ph-arrow-right"></i></a>
                  </div>
                  <div className="result-card">
-                    <div className="tags"><span className="tag-ads">Google Ads</span><span className="tag-seo">SEO</span></div>
+                    <div className="tags"><span className="tag-seo">SEO</span></div>
                     <div className="result-icon" style={{color: '#f97316'}}><i className="ph-bold ph-house-line"></i></div>
-                    <h4>Painting Services</h4>
-                    <p>Dominating the local map pack with a 50% reduction in lead cost.</p>
+                    <h4>Construction Co</h4>
+                    <p>150% increase in qualified organic leads for custom home builds.</p>
                     <a href="#" className="read-more">Read Case Study <i className="ph-bold ph-arrow-right"></i></a>
                  </div>
                  <div className="result-card">
-                    <div className="tags"><span className="tag-ads">Google Ads</span></div>
+                    <div className="tags"><span className="tag-seo">SEO</span></div>
                     <div className="result-icon" style={{color: '#06b6d4'}}><i className="ph-bold ph-wrench"></i></div>
-                    <h4>AC Repair Team</h4>
-                    <p>Generated 300+ emergency repair leads during peak summer months.</p>
+                    <h4>Industrial Supplier</h4>
+                    <p>Scaled national reach with content-driven authority building.</p>
                     <a href="#" className="read-more">Read Case Study <i className="ph-bold ph-arrow-right"></i></a>
                  </div>
               </div>
            </div>
         </section>
 
-
-
         {/* FAQs */}
         <section id="faq" className="faq-section" style={{ background: '#f8fafc' }}>
           <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            <h2 style={{ marginBottom: '3rem' }}>Frequently Asked Questions</h2>
+            <h2 style={{ marginBottom: '3rem' }}>SEO Frequently Asked Questions</h2>
             <div className="faq-right" style={{ textAlign: 'left' }}>
               <div className="faq-item">
-                <span>How long does it take to see results?</span>
+                <span>How long does it take to see SEO results?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
               <div className="faq-item">
-                <span>Will you guarantee leads or sales?</span>
+                <span>Do you guarantee #1 rankings?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
               <div className="faq-item">
-                <span>Which services are best for my business?</span>
+                <span>What is the difference between On-Page and Off-Page SEO?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
               <div className="faq-item">
-                <span>What industries do you work with?</span>
-                <i className="ph-bold ph-plus"></i>
-              </div>
-              <div className="faq-item">
-                <span>Do you work with small businesses?</span>
-                <i className="ph-bold ph-plus"></i>
-              </div>
-              <div className="faq-item">
-                <span>Do I need to sign a long-term contract?</span>
+                <span>How do you track SEO success?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
             </div>
@@ -340,8 +329,8 @@ export default function GoogleAdsService() {
           <div className="cta-banner" style={{ borderRadius: 0, padding: '4rem 2rem' }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
               <div className="cta-banner-left" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <h2 style={{ fontSize: '2.5rem' }}>Let&apos;s Connect</h2>
-                <p>Ready to start scaling? Get in touch with our expert team today.</p>
+                <h2 style={{ fontSize: '2.5rem' }}>Let&apos;s Build Your Organic Growth</h2>
+                <p>Ready to start ranking? Get in touch with our expert SEO team today.</p>
               </div>
               <a href="#audit" className="btn btn-white btn-lg" style={{ color: 'var(--dark-navy)' }}>Get Your Free Audit <i className="ph-bold ph-arrow-right"></i></a>
             </div>
@@ -369,9 +358,9 @@ export default function GoogleAdsService() {
             <ul>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/#about">About Us</Link></li>
-              <li><Link href="/#services">Services</Link></li>
-              <li><Link href="/#cases">Case Studies</Link></li>
-              <li><Link href="/#blog">Blog</Link></li>
+              <li><Link href="/services/google-ads">Services</Link></li>
+              <li><Link href="/case-studies">Case Studies</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/#contact">Contact Us</Link></li>
             </ul>
           </div>
@@ -391,7 +380,7 @@ export default function GoogleAdsService() {
           <div className="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="#about">About Us</a></li>
+              <li><Link href="/#about">About Us</Link></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms & Conditions</a></li>
@@ -413,9 +402,7 @@ export default function GoogleAdsService() {
               <span>123, Business Street,<br/>Gurugram, Haryana - 122001</span>
             </div>
           </div>
-          
         </div>
-
 
         <div className="footer-bottom">
           <p>© 2024 Bidxperts. All Rights Reserved.</p>
