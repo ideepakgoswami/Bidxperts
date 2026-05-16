@@ -51,11 +51,10 @@ export default function Home() {
             <div className="hero-content">
               <div className="hero-tagline">RESULTS-FOCUSED DIGITAL MARKETING</div>
               <h1>
-                Data-Driven Marketing That Converts Clicks Into Customers. <span className="text-primary">That&apos;s Bidxperts.</span>
+                Stop Wasting Money on Ads That Don’t Generate Qualified Leads. <span className="text-primary">That&apos;s Bidxperts.</span>
               </h1>
               <p>
-                We help businesses attract the right audience, generate quality leads,
-                and maximize ROI with performance-driven marketing strategies.
+                We help service-based businesses generate high-quality leads through strategic Google Ads, Meta Ads, SEO, and conversion-focused landing pages designed to increase enquiries and reduce wasted ad spend.
               </p>
               <div className="hero-actions">
                 <a href="#audit" className="btn btn-white btn-lg">Get Your Free Audit <i className="ph-bold ph-arrow-right"></i></a>
