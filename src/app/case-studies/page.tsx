@@ -107,7 +107,7 @@ export default function CaseStudiesPage() {
           <div className="container cs-hero-content">
             <div className="cs-hero-text">
               <div className="section-tag" style={{color: 'var(--primary)', backgroundColor: 'transparent', padding: 0, marginBottom: '1rem'}}>CASE STUDIES</div>
-              <h1>Real Results.<br/>Real Growth.</h1>
+              <h1>Real Results<br/>Real Growth</h1>
               <p>Explore how we&apos;ve helped businesses across industries achieve measurable growth with data-driven digital marketing strategies.</p>
             </div>
             {/* The chart graphic is handled via a background image or abstract CSS in the right side */}
