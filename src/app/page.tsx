@@ -143,51 +143,51 @@ export default function Home() {
           <div className="container grid-2">
             <div className="why-left">
               <div className="section-tag">WHY BUSINESSES CHOOSE US</div>
-              <h2>Your <span className="text-primary">Growth</span> Is Our Responsibility</h2>
-              <p>We don&apos;t believe in one-size-fits-all. Every strategy we build is customized to your goals, your audience, and your industry.</p>
+              <h2>Why <span className="text-primary">Businesses</span> Choose Bidxperts</h2>
+              <p>We combine performance-driven marketing strategies, conversion-focused optimization, and real industry experience to help businesses generate better quality leads and achieve sustainable growth.</p>
               <a href="#about" className="btn btn-dark">Learn More About Us <i className="ph-bold ph-arrow-right"></i></a>
             </div>
             <div className="why-right features-grid">
               <div className="feature-item">
                 <div className="feature-icon"><i className="ph-bold ph-target"></i></div>
                 <div className="feature-text">
-                  <h4>ROI-First Approach</h4>
-                  <p>We focus on what matters - measurable results that drive business growth.</p>
+                  <h4>Real Lead Generation Experience</h4>
+                  <p>We work with businesses focused on generating real enquiries, calls, and bookings — not just clicks.</p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-icon"><i className="ph-fill ph-file-text"></i></div>
                 <div className="feature-text">
-                  <h4>Transparent Reporting</h4>
-                  <p>Real-time reports and clear insights to track every rupee you invest.</p>
+                  <h4>Data-Driven Strategy</h4>
+                  <p>Every campaign decision is backed by data, conversion tracking, and performance insights.</p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-icon"><i className="ph-fill ph-user-circle"></i></div>
                 <div className="feature-text">
-                  <h4>Dedicated Experts</h4>
-                  <p>A skilled team that works as an extension of your business.</p>
+                  <h4>Transparent Communication</h4>
+                  <p>No confusing reports or hidden strategies. We keep everything transparent and growth-focused.</p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-icon"><i className="ph-fill ph-star"></i></div>
                 <div className="feature-text">
-                  <h4>Proven Strategies</h4>
-                  <p>Data-backed strategies that have delivered exceptional results across industries.</p>
+                  <h4>Performance Optimization</h4>
+                  <p>We continuously optimize campaigns to improve lead quality and reduce acquisition costs.</p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-icon"><i className="ph-bold ph-puzzle-piece"></i></div>
                 <div className="feature-text">
-                  <h4>End-to-End Solutions</h4>
-                  <p>From strategy to execution, we handle everything so you can focus on growth.</p>
+                  <h4>Conversion-Focused Approach</h4>
+                  <p>We optimize both the ads and the landing pages to maximize conversions.</p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-icon"><i className="ph-bold ph-headset"></i></div>
                 <div className="feature-text">
-                  <h4>24/7 Support</h4>
-                  <p>We&apos;re always here to solve your problems and answer your questions.</p>
+                  <h4>International Market Experience</h4>
+                  <p>Experience working with competitive international markets helps us build strategies focused on high-quality leads and scalable growth.</p>
                 </div>
               </div>
             </div>
