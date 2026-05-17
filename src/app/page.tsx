@@ -198,31 +198,31 @@ export default function Home() {
           <div className="container">
             <div className="section-header">
               <div className="section-tag">OUR SERVICES</div>
-              <h2>Digital Marketing Solutions That Drive Real Results</h2>
+              <h2>Built to drive leads, sales, and growth.</h2>
             </div>
             <div className="services-grid">
               <div className="service-card">
                 <div className="service-card-icon"><i className="ph-bold ph-magnifying-glass"></i></div>
                 <h4>SEO Services</h4>
-                <p>Rank higher on Google, get more organic traffic and generate consistent leads.</p>
+                <p>Everything your business needs to generate more leads, improve visibility, and grow online with confidence.</p>
                 <a href="#" className="service-link">Learn More <i className="ph-bold ph-arrow-right"></i></a>
               </div>
               <div className="service-card">
                 <div className="service-card-icon"><i className="ph-bold ph-desktop"></i></div>
                 <h4>Website Design</h4>
-                <p>We design fast, responsive and conversion-focused websites that turn visitors into customers.</p>
+                <p>We design modern websites and landing pages that not only look professional but are built to convert visitors into leads.</p>
                 <a href="#" className="service-link">Learn More <i className="ph-bold ph-arrow-right"></i></a>
               </div>
               <div className="service-card">
                 <div className="service-card-icon"><i className="ph-bold ph-paper-plane-tilt"></i></div>
                 <h4>Google Ads</h4>
-                <p>Get high-intent leads and maximize ROI with data-driven Google Ads campaigns.</p>
+                <p>We create high-converting Google Ads campaigns designed to attract customers actively searching for your services.</p>
                 <a href="#" className="service-link">Learn More <i className="ph-bold ph-arrow-right"></i></a>
               </div>
               <div className="service-card">
                 <div className="service-card-icon"><i className="ph-bold ph-chart-bar"></i></div>
                 <h4>Meta Ads</h4>
-                <p>Reach the right audience on Facebook & Instagram and turn them into customers.</p>
+                <p>We build strategic Facebook & Instagram campaigns that help businesses increase brand awareness, generate leads, and retarget potential customers.</p>
                 <a href="#" className="service-link">Learn More <i className="ph-bold ph-arrow-right"></i></a>
               </div>
             </div>
@@ -239,32 +239,32 @@ export default function Home() {
               <div className="process-step">
                 <div className="process-icon"><i className="ph-bold ph-magnifying-glass text-white"></i></div>
                 <span className="process-num">01</span>
-                <h4>Discover</h4>
-                <p>We understand your business, audience & competition.</p>
+                <h4>Strategy & Research</h4>
+                <p>We analyze your business, competitors, audience, and market opportunities.</p>
               </div>
               <div className="process-step">
                 <div className="process-icon"><i className="ph-bold ph-clipboard-text text-white"></i></div>
                 <span className="process-num">02</span>
-                <h4>Plan</h4>
-                <p>We create a customized strategy tailored to your goals.</p>
+                <h4>Campaign Setup</h4>
+                <p>We build optimized campaigns with proper targeting, tracking, and conversion-focused structure.</p>
               </div>
               <div className="process-step">
                 <div className="process-icon"><i className="ph-bold ph-paper-plane-tilt text-white"></i></div>
                 <span className="process-num">03</span>
-                <h4>Execute</h4>
-                <p>We launch campaigns with precision and best practices.</p>
+                <h4>Landing Page Optimization</h4>
+                <p>We improve user experience and conversion elements to increase lead generation.</p>
               </div>
               <div className="process-step">
                 <div className="process-icon"><i className="ph-bold ph-chart-line-up text-white"></i></div>
                 <span className="process-num">04</span>
                 <h4>Optimize</h4>
-                <p>We monitor, test and optimize for better performance.</p>
+                <p>We monitor, test, and optimize campaigns regularly for better performance.</p>
               </div>
               <div className="process-step">
                 <div className="process-icon"><i className="ph-fill ph-trophy text-white"></i></div>
                 <span className="process-num">05</span>
-                <h4>Scale</h4>
-                <p>We scale what works to maximize ROI and business growth.</p>
+                <h4>Scale Growth</h4>
+                <p>Once profitable performance is achieved, we focus on scaling campaigns strategically.</p>
               </div>
             </div>
           </div>
@@ -273,7 +273,7 @@ export default function Home() {
         <section id="testimonials" className="testimonials-section">
           <div className="container">
             <div className="section-tag">WHAT OUR CLIENTS SAY</div>
-            <h2>Loved by Businesses, Proven by Results</h2>
+            <h2>What Businesses Value About Working With Us</h2>
             <div className="testimonials-slider">
               <button className="slider-arrow"><i className="ph-bold ph-caret-left"></i></button>
               <div className="testimonial-card">
@@ -281,7 +281,7 @@ export default function Home() {
                   <i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i>
                 </div>
                 <i className="ph-fill ph-quotes quote-icon"></i>
-                <p>Bidxperts delivered more leads in 3 months than we got in the entire last year. Highly professional and results-driven team!</p>
+                <p>Bidxperts helped improve our lead quality and reduced wasted ad spend significantly. Their communication and optimization process made a huge difference!</p>
                 <div className="client-info">
                   <img src="https://i.pravatar.cc/150?img=11" alt="Rohit Malhotra" />
                   <div>
