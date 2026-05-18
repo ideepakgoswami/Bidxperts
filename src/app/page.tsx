@@ -89,7 +89,7 @@ export default function Home() {
             {/* Right Form */}
             <div className="hero-form-wrapper" id="audit">
               <div className="hero-form-card">
-                <h2>Get Your <span className="text-primary">FREE</span> Marketing Audit</h2>
+                <h2>Get Your <span className="text-primary">FREE</span> Audit Now</h2>
                 <p>Fill out the form and our experts will get back to you within 24 hours.</p>
                 <form className="hero-form">
                   <div className="form-group with-icon">
@@ -337,28 +337,35 @@ export default function Home() {
             </div>
             <div className="faq-right">
               <div className="faq-item">
-                <span>What industries do you specialize in?</span>
+                <span>Why am I getting clicks but no conversions from Google Ads?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
               <div className="faq-item">
-                <span>Will you guarantee leads or sales?</span>
+                <span>How can I reduce wasted ad spend on Google Ads?</span>
                 <i className="ph-bold ph-plus"></i>
-                <p>We primarily work with lead generation businesses including local services, trades, B2B services, healthcare, education, and professional service providers.</p>
-              </div>
+          </div>
               <div className="faq-item">
-                <span>Which services are best for my business?</span>
-                <i className="ph-bold ph-plus"></i>
-              </div>
-              <div className="faq-item">
-                <span>What industries do you work with?</span>
+                <span>What is causing high cost per lead in my campaigns?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
               <div className="faq-item">
-                <span>Do you work with small businesses?</span>
+                <span>How do you improve lead quality from paid ads?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
               <div className="faq-item">
-                <span>Do I need to sign a long-term contract?</span>
+                <span>What makes a high-converting landing page?</span>
+                <i className="ph-bold ph-plus"></i>
+              </div>
+              <div className="faq-item">
+                <span>Why is my website getting traffic but no enquiries?</span>
+                <i className="ph-bold ph-plus"></i>
+              </div>
+              <div className="faq-item">
+                <span>Can SEO help generate consistent long-term leads?</span>
+                <i className="ph-bold ph-plus"></i>
+              </div>
+              <div className="faq-item">
+                <span>How do you track leads and conversions accurately?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
             </div>
