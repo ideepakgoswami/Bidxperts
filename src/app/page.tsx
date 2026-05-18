@@ -337,12 +337,13 @@ export default function Home() {
             </div>
             <div className="faq-right">
               <div className="faq-item">
-                <span>How long does it take to see results?</span>
+                <span>What industries do you specialize in?</span>
                 <i className="ph-bold ph-plus"></i>
               </div>
               <div className="faq-item">
                 <span>Will you guarantee leads or sales?</span>
                 <i className="ph-bold ph-plus"></i>
+                <p>We primarily work with lead generation businesses including local services, trades, B2B services, healthcare, education, and professional service providers.</p>
               </div>
               <div className="faq-item">
                 <span>Which services are best for my business?</span>
